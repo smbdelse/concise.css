@@ -40,7 +40,7 @@ menu,
 nav,
 section,
 summary { // 1
-	display: block;
+  display: block;
 }
 
 //
@@ -51,7 +51,7 @@ audio,
 canvas,
 progress,
 video {
-	display: inline-block;
+  display: inline-block;
 }
 
 //
@@ -59,8 +59,8 @@ video {
 //
 
 audio:not([controls]) {
-	display: none;
-	height: 0;
+  display: none;
+  height: 0;
 }
 
 //
@@ -70,7 +70,7 @@ audio:not([controls]) {
 
 template, // 1
 [hidden] {
-	display: none;
+  display: none;
 }
 
 //
@@ -85,8 +85,8 @@ template, // 1
 *,
 ::before,
 ::after {
-	background-repeat: no-repeat; // 1
-	box-sizing: inherit; // 2
+  background-repeat: no-repeat; // 1
+  box-sizing: inherit; // 2
 }
 
 //
@@ -96,8 +96,8 @@ template, // 1
 
 ::before,
 ::after {
-	text-decoration: inherit; // 1
-	vertical-align: inherit; // 2
+  text-decoration: inherit; // 1
+  vertical-align: inherit; // 2
 }
 
 //
@@ -105,12 +105,11 @@ template, // 1
 //
 
 :root {
-	box-sizing: border-box;
-	font-family: $font-primary;
-	line-height: 1.5;
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-  background-color: getColor(background, body);
+  box-sizing: border-box;
+  font-family: $font-primary;
+  line-height: 1.5;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   color: getColor(text, primary);
   font-size: $font-size + px;
   text-rendering: optimizeLegibility;
@@ -119,6 +118,8 @@ template, // 1
     font-size: $font-size-secondary + px;
   }
 }
+
+body { background-color: getColor(background, body); }
 
 //
 // 3. Grouping content (https://www.w3.org/TR/html5/grouping-content.html)
@@ -133,8 +134,8 @@ code,
 kbd,
 pre,
 samp {
-	font-family: $font-mono; // 1
-	font-size: typeScale(1); // 2
+  font-family: $font-mono; // 1
+  font-size: typeScale(1); // 2
   background-color: getColor(background, light);
 }
 
@@ -161,9 +162,9 @@ kbd {
 //
 
 hr {
-	background-color: getColor(base, lines);
+  background-color: getColor(base, lines);
   height: 1px;
-	overflow: visible; // 2
+  overflow: visible; // 2
   border: 0;
 }
 
@@ -230,7 +231,7 @@ abbr {
 
 b,
 strong {
-	font-weight: inherit;
+  font-weight: inherit;
 }
 
 //
@@ -239,7 +240,7 @@ strong {
 
 b,
 strong {
-	font-weight: bolder;
+  font-weight: bolder;
 }
 
 //
@@ -247,7 +248,7 @@ strong {
 //
 
 dfn {
-	font-style: italic;
+  font-style: italic;
 }
 
 //
@@ -255,8 +256,8 @@ dfn {
 //
 
 mark {
-	background-color: #ffff00;
-	color: #000000;
+  background-color: #ffff00;
+  color: #000000;
 }
 
 //
@@ -264,7 +265,7 @@ mark {
 //
 
 progress {
-	vertical-align: baseline;
+  vertical-align: baseline;
 }
 
 //
@@ -272,7 +273,7 @@ progress {
 //
 
 small {
-	// Use the next smaller size in the scale
+  // Use the next smaller size in the scale
   font-size: 100% / $scale-ratio;
 }
 
@@ -287,9 +288,9 @@ small {
 
 sub,
 sup {
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
   font-size: 100% / $scale-ratio; // 1
 }
 
@@ -309,13 +310,13 @@ sup {
 //
 
 ::-moz-selection {
-	background-color: getColor(base, selection); // 2
-	text-shadow: none; // 1
+  background-color: getColor(base, selection); // 2
+  text-shadow: none; // 1
 }
 
 ::selection {
-	background-color: getColor(base, selection); // 2
-	text-shadow: none; // 1
+  background-color: getColor(base, selection); // 2
+  text-shadow: none; // 1
 }
 
 //
@@ -332,7 +333,7 @@ iframe,
 img,
 svg,
 video {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 
 //
@@ -340,7 +341,7 @@ video {
 //
 
 img {
-	border-style: none;
+  border-style: none;
 }
 
 //
@@ -348,7 +349,7 @@ img {
 //
 
 svg {
-	fill: currentColor;
+  fill: currentColor;
 }
 
 //
@@ -356,7 +357,7 @@ svg {
 //
 
 svg:not(:root) {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 //
@@ -370,8 +371,8 @@ svg:not(:root) {
 //
 
 a {
-	background-color: transparent; // 1
-	-webkit-text-decoration-skip: objects; // 2
+  background-color: transparent; // 1
+  -webkit-text-decoration-skip: objects; // 2
   color: getColor(base, primary);
   text-decoration: none;
   transition-duration: $transition-duration; // 3
@@ -385,7 +386,7 @@ a {
 //
 
 a:hover {
-	outline-width: 0;
+  outline-width: 0;
 }
 
 //
@@ -397,8 +398,8 @@ a:hover {
 //
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 //
@@ -412,9 +413,9 @@ table {
 input,
 select,
 textarea {
-	background-color: transparent; // 1
-	border-style: none; // 1
-	color: inherit; // 1
+  background-color: transparent; // 1
+  border-style: none; // 1
+  color: inherit; // 1
   font: inherit;
 
   &:focus { outline: 2px solid getColor(blue, base); }
@@ -427,7 +428,7 @@ textarea {
 
 button,
 input { // 1
-	overflow: visible;
+  overflow: visible;
 }
 
 //
@@ -437,7 +438,7 @@ input { // 1
 
 button,
 select { // 1
-	text-transform: none;
+  text-transform: none;
 }
 
 //
@@ -450,7 +451,7 @@ button,
 html [type="button"], // 1
 [type="reset"],
 [type="submit"] {
-	-webkit-appearance: button; // 2
+  -webkit-appearance: button; // 2
   font: inherit;
 }
 
@@ -459,8 +460,8 @@ html [type="button"], // 1
 //
 
 ::-moz-focus-inner {
-	border-style: none;
-	padding: 0;
+  border-style: none;
+  padding: 0;
 }
 
 //
@@ -468,7 +469,7 @@ html [type="button"], // 1
 //
 
 :-moz-focusring {
-	outline: 1px dotted ButtonText;
+  outline: 1px dotted ButtonText;
 }
 
 //
@@ -476,7 +477,7 @@ html [type="button"], // 1
 //
 
 fieldset {
-	border: 1px solid getColor(base, lines);
+  border: 1px solid getColor(base, lines);
   padding: 1lh 1em;
 }
 
@@ -485,10 +486,10 @@ fieldset {
 //
 
 legend {
-	display: table; // 1
-	max-width: 100%; // 1
-	white-space: normal; // 1
-	padding: 0 0.5em;
+  display: table; // 1
+  max-width: 100%; // 1
+  white-space: normal; // 1
+  padding: 0 0.5em;
 }
 
 //
@@ -497,9 +498,9 @@ legend {
 //
 
 textarea {
-	overflow: auto; // 1
-	resize: vertical; // 2
-	height: auto;
+  overflow: auto; // 1
+  resize: vertical; // 2
+  height: auto;
   padding: 0.25lh 0.5em;
 }
 
@@ -509,7 +510,7 @@ textarea {
 
 [type="checkbox"],
 [type="radio"] {
-	padding: 0;
+  padding: 0;
 }
 
 //
@@ -518,7 +519,7 @@ textarea {
 
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
-	height: auto;
+  height: auto;
 }
 
 //
@@ -527,8 +528,8 @@ textarea {
 //
 
 [type="search"] {
-	-webkit-appearance: textfield; // 1
-	outline-offset: -2px; // 2
+  -webkit-appearance: textfield; // 1
+  outline-offset: -2px; // 2
 }
 
 //
@@ -537,7 +538,7 @@ textarea {
 
 ::-webkit-search-cancel-button,
 ::-webkit-search-decoration {
-	-webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 //
@@ -545,8 +546,8 @@ textarea {
 //
 
 ::-webkit-input-placeholder {
-	color: inherit;
-	opacity: .54;
+  color: inherit;
+  opacity: .54;
 }
 
 //
@@ -555,8 +556,8 @@ textarea {
 //
 
 ::-webkit-file-upload-button {
-	-webkit-appearance: button; /* 1 */
-	font: inherit; /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 //
@@ -632,7 +633,7 @@ input[type="submit"] { @extend button; }
 //
 
 [aria-busy="true"] {
-	cursor: progress;
+  cursor: progress;
 }
 
 //
@@ -640,7 +641,7 @@ input[type="submit"] { @extend button; }
 //
 
 [aria-controls] {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 //
@@ -649,7 +650,7 @@ input[type="submit"] { @extend button; }
 //
 
 [aria-disabled] {
-	cursor: default;
+  cursor: default;
 }
 
 //
@@ -669,8 +670,8 @@ label,
 select,
 textarea,
 [tabindex] {
-	-ms-touch-action: manipulation; // 1
-	touch-action: manipulation;
+  -ms-touch-action: manipulation; // 1
+  touch-action: manipulation;
 }
 
 //
@@ -678,13 +679,13 @@ textarea,
 //
 
 [hidden][aria-hidden="false"] {
-	clip: rect(0, 0, 0, 0);
-	display: inherit;
-	position: absolute;
+  clip: rect(0, 0, 0, 0);
+  display: inherit;
+  position: absolute;
 }
 
 [hidden][aria-hidden="false"]:focus {
-	clip: auto;
+  clip: auto;
 }
 
 //
@@ -710,8 +711,8 @@ textarea,
   span,
   dd,
   code,
-	label,
-  br
+  label,
+  br,
   [#{$prefix}column]{ margin-top: 0; }
 
   // First paragraphs below a heading shouldn’t get a margin
