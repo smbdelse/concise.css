@@ -7,7 +7,6 @@ select,
 textarea {
   width: 100%;
   font-size: typeScale(1);
-  min-height: 1.5lh;
 
   &[disabled] {
     background-color: getColor(state, muted);
@@ -36,6 +35,7 @@ input[type="radio"] {
   line-height: normal;
   padding: 0;
   vertical-align: middle;
+  margin-bottom: 0.1lh;
 }
 
 input[type="file"] {
@@ -67,14 +67,19 @@ select {
 }
 
 label {
-  display: block;
   font-size: typeScale(1);
   line-height: 1.5lh;
 }
 
-// Labels are inline with their checkbox and radio elements
+// Inputs before label
 input[type="checkbox"] + label,
 input[type="radio"] + label {
-  display: inline-block;
   margin-left: 0.5em;
+}
+
+// Inputs inside label.
+// Inputs inside label.
+label > input[type="radio"],
+label > input[type="checkbox"] {
+  margin-right: 0.5em;
 }
