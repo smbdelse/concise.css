@@ -13,6 +13,23 @@
     padding-right: $gutter / 2;
   }
 
+  @if($enable-container-solid) {
+    [#{$prefix}container~="solid"] {
+      @media(--small) {
+        max-width: $break-small;
+      }
+      @media(--medium) {
+        max-width: $break-medium;
+      }
+      @media(--large) {
+        max-width: $break-large;
+      }
+      @media(--extra-large) {
+        max-width: $container-width;
+      }
+    }
+  }
+
   [#{$prefix}grid] {
     display: flex;
     margin-left: $gutter / -2;
@@ -37,7 +54,7 @@
     margin-left: 0;
     margin-right: 0;
 
-    [#{$prefix}column] {
+    > [#{$prefix}column] {
       padding-left: 0;
       padding-right: 0;
     }
